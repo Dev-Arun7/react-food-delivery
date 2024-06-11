@@ -1,0 +1,26 @@
+# Ignore other common files
+node_modules/
+dist/
+.DS_Store
+*.log
+.parcel-cache/
+
+# Ignore environment variables file
+.env
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+
+# Ignore npm debug logs
+npm-debug.log*
+
+# Ignore yarn lock file if you use yarn
+yarn.lock
+
+# Ignore coverage directory used by testing tools
+coverage/
+
+# Ignore temporary files and directories
+tmp/
+temp/

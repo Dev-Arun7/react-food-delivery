@@ -1,0 +1,32 @@
+{
+  "name": "05_npm",
+  "version": "1.0.0",
+  "description": "Starting React by Arun Balakrishnan",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Dev-Arun7/react-learning.git"
+  },
+  "keywords": [
+    "react",
+    "javascript"
+  ],
+  "author": "Arun Balakrishnan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dev-Arun7/react-learning/issues"
+  },
+  "homepage": "https://github.com/Dev-Arun7/react-learning#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

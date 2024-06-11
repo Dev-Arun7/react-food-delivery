@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(226, 255, 228);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(191, 235, 204);
+}
+
+.logo {
+  width: 150;
+  padding: 10px;
+}
+
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 5px;
+}
+
+.res-cotainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.res-card {
+  width: 200px;
+  height: 330px;
+  background-color: rgb(197, 230, 205);
+  border-radius: 7px;
+  box-shadow: 5px 7px 15px rgb(118, 126, 118);
+  margin: 15px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.res-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.search {
+  padding: 15px;
+}
+
+.res-logo {
+  width: 100%;
+}
