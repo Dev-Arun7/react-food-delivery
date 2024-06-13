@@ -63,3 +63,9 @@ body {
   justify-content: space-between;
   padding: 0 50px;
 }
+
+.filter-btn {
+  padding: 7px;
+  margin-left: 20px;
+  cursor: pointer;
+}
