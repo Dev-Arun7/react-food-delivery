@@ -1,6 +1,11 @@
+import { useState, useEffect } from "react";
 import { LOGO_URL } from "../utils/constants";
 
 const Header = () => {
+  const [loginBtn, setLoginBtn] = useState("Login");
+  useEffect(() => {
+    console.log("use_effect is called");
+  }, [loginBtn ]);
   return (
     <div className="header">
       <div className="nav-container">
@@ -12,6 +17,17 @@ const Header = () => {
           <li>About Us</li>
           <li>Contact Us</li>
           <li>Cart</li>
+          <button
+            className="login"
+            onClick={() => {
+              loginBtn == "Login"
+                ? setLoginBtn("Logout")
+                : setLoginBtn("Login");
+            }}
+          >
+            {" "}
+            {loginBtn}{" "}
+          </button>
         </ul>
       </div>
     </div>
@@ -19,3 +35,5 @@ const Header = () => {
 };
 
 export default Header;
+
+ 

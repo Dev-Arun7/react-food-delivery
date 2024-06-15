@@ -13,6 +13,13 @@ body {
   padding: 10px;
 }
 
+.login {
+  padding: 7px 20px;
+  margin-right: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
 .nav-items > ul {
   display: flex;
   list-style-type: none;
@@ -64,8 +71,34 @@ body {
   padding: 0 50px;
 }
 
+.search-box {
+  padding: 7px;
+  margin-left : 20px;
+}
+
 .filter-btn {
   padding: 7px;
   margin-left: 20px;
   cursor: pointer;
+}
+
+.filter {
+  margin-top : 10px;
+}
+
+.search-btn {
+  padding: 7px;
+  cursor: pointer;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.shimmer-card {
+  width: 200px;
+  height: 250px;
+  background-color: rgba(151, 151, 151, 0.39);
+  margin: 10px;
+  border-radius: 5px;
 }
