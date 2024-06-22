@@ -2,6 +2,7 @@ import RestuarentCard from "./RestaurentCard";
 import Shimmer from "./Shimmer";
 import resList from "../utils/mockData";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 let data = [
   {
@@ -70,6 +71,7 @@ const Body = () => {
   const [listOfRestuarants, setListOfRestaurants] = useState([]);
   const [filteredRestuarant, setFilteredRestuarant] = useState([]);
   const [searchText, setSearchText] = useState("");
+  console.log(filteredRestuarant)
   useEffect(() => {
     fetchData();
   }, []);
@@ -88,7 +90,7 @@ const Body = () => {
     console.log(
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
-  };
+  }; 
   if (listOfRestuarants.length == 0) {
     return (
       <h1>
@@ -98,7 +100,7 @@ const Body = () => {
     );
   }
 
-  return listOfRestuarants.length == 0 ? (
+  return listOfRestuarants.length == 0 ? (   
     <Shimmer />
   ) : (
     <div className="body">
@@ -134,14 +136,14 @@ const Body = () => {
             setFilteredRestuarant(filteredList);
           }}
         >
-          Top Restaurents{" "}
+          Top Restaurants{" "}
         </button>{" "}
       </div>
 
       <div className="res-cotainer">
         {" "}
-        {filteredRestuarant.map((restaurent) => (
-          <RestuarentCard key={restaurent.info.id} resData={restaurent} />
+        {filteredRestuarant.map((restaurant) => (
+          <Link to={"/restuarants/" + restaurant.info.id}><RestuarentCard resData={restaurant} /></Link>
         ))}
       </div>
     </div>
